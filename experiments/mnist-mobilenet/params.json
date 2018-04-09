@@ -1,0 +1,27 @@
+{
+    "model": "mobilenet",
+    "depth_multiplier":0.25,
+
+    "learning_rate": 1e-5,
+    "num_epochs_per_decay":100,
+    "decay_rate":0.94,
+    "batch_size": 32,
+    "num_epochs": 20,
+
+    "margin": 0.5,
+    "embedding_size": 64,
+    "triplet_strategy": "batch_all",
+    "squared": false,
+    "use_batch_norm": false,
+
+    "dataset":"mnist-as-jpeg",
+    "shuffle_buffer_size": 10000,
+    "train_size":35700,
+    "validate_size":6300,
+    "resize":true,
+    "image_size": 128,
+    "image_format": "jpeg",
+    "num_labels": 10,
+
+    "save_summary_steps": 50
+}

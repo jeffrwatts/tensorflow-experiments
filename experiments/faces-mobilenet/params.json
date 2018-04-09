@@ -1,0 +1,28 @@
+{
+    "model": "mobilenet",
+    "depth_multiplier":0.25,
+
+    "learning_rate": 8e-4,
+    "num_epochs_per_decay":10,
+    "decay_rate":0.94,
+    "batch_size": 64,
+    "num_epochs": 90,
+
+
+    "use_batch_norm": false,
+    "margin": 0.5,
+    "embedding_size": 128,
+    "triplet_strategy": "batch_all",
+    "squared": false,
+
+    "dataset":"faces-dataset",
+    "shuffle_buffer_size": 250,
+    "train_size":48000,
+    "validate_size":8550,
+    "image_size": 160,
+    "image_format": "png",
+    "num_labels": 529,
+
+    "num_parallel_calls": 4,
+    "save_summary_steps": 50
+}
